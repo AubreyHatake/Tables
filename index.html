@@ -113,7 +113,15 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/yOp2i07hVqs?si=02-S-3twtHyJpN3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>
 <div>
-    <button> Click here 👀 </button>
+    <button id="btn" > Click here 👀 </button>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+    document.getElementById("btn").addEventListener("click", () => {
+        confetti({
+     particleCount: 150
+      });
+    });
+</script>
 </body>
 </html>

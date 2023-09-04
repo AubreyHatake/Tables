@@ -15,5 +15,8 @@ table {
 }
 
 button {
-    
+    height: 22%;
+    width: 10%;
+    background-color: rgb(254, 234, 239);
+    border-color: white;
 }
